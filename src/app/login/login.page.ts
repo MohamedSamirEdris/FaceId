@@ -18,8 +18,9 @@ export class LoginPage implements OnInit {
 
   login(){
     this.faio.show({
+      title: 'Biometric Authentication', // (Android Only) | optional | Default: "<APP_NAME> Biometric Sign On"
+      subtitle: 'Coolest Plugin ever' // (Android Only) | optional | Default: null
       
-
     }).then (() =>{
       if (this.isModal) {
         this.modalCtrl.dismiss();
